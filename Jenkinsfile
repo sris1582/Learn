@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-         Make sure the name matches your configured JDK in Jenkins
-        jdk 'JDK 21.0.2'
+        // Make sure the name matches your configured JDK in Jenkins
+         jdk 'OpenJDK 21'
     }
 
     stages {
