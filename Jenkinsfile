@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         // Make sure the name matches your configured JDK in Jenkins
-         jdk 'JDK-21'
+         jdk 'Oracle JDK 21'
     }
 
     stages {
