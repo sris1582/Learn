@@ -1,5 +1,5 @@
 # Use the official OpenJDK 11 image as a base
-FROM openjdk:11
+FROM openjdk:21
 
 # Set the working directory in the container
 WORKDIR /app
