@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         // Make sure the name matches your configured JDK in Jenkins
-         jdk 'jdk_21.0.2'
+         jdk 'JDK11'
     }
 
     stages {
