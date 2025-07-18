@@ -2,7 +2,7 @@ pipeline {
     agent any
 
      tools {
-          Make sure the name matches your configured JDK in Jenkins
+          //Make sure the name matches your configured JDK in Jenkins
           jdk 'jdk8'
       }
 
