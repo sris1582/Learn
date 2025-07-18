@@ -19,7 +19,7 @@ pipeline {
                 // Assuming HelloWorld.java is in the root of your Git repository
                 // If not, adjust the 'dir' path accordingly
                 dir('.') {
-                    sh '''
+                    bat '''
                         javac HelloWorld.java
                         java HelloWorld
                     '''
