@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Adjust this to match your SCM configuration
-                git 'https://github.com/sris1582/Learn.git'
+                   git branch: 'main', url: 'https://github.com/sris1582/Learn.git'
             }
         }
 
