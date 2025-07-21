@@ -1,19 +1,29 @@
 pipeline {
     agent any
+
+     tools {
+          //Make sure the name matches your configured JDK in Jenkins
+          jdk 'jdk8'
+      }
+
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                // Adjust this to match your SCM configuration
+                git 'https://github.com/sris1582/Learn.git'
             }
         }
-        stage('Build') {
+
+        stage('Compile and Run') {
             steps {
-                bat 'javac HelloWorld.java'
-            }
-        }
-        stage('Test') {
-            steps {
-                bat 'java HelloWorld'
+                // Assuming HelloWorld.java is in the root of your Git repository
+                // If not, adjust the 'dir' path accordingly
+                dir('.') {
+                    bat '''
+                        javac HelloWorld.java
+                        java HelloWorld
+                    '''
+                }
             }
         }
     }
